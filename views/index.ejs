@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<title> Welcome </title>
+
+<head> TO DO APP 2</head>
+
+<body bgcolor="Blue">
+    <div>
+    <form action="index.ejs" method="POST">
+        <label for="item"> Item</label>
+        <input type="text" id="item"  name="item" placeholder="Add your item here..." required> 
+    </div>
+    <div> 
+        <buttom type="submit" id="submit" name="submit"> Add item</buttom>
+    </form>
+    </div>
+
+    <div>
+        <ol type="1">
+             <% for (var i=0;i< r.length;i++){ %>
+                <li> <%= r[i].item %></li>
+                <% } %>
+        </ol>
+    </div>
+</body>
+</html>
